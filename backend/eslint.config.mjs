@@ -26,7 +26,13 @@ export default tseslint.config(
     }
   },
   {
-    ignores: ['**/*.js', '**/*.d.ts', 'node_modules', 'dist'],
+    ignores: [
+      '**/*.js',
+      '**/*.d.ts',
+      'node_modules',
+      'dist',
+      '**/__mocks/__**'
+    ],
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-floating-promises': 'warn',
